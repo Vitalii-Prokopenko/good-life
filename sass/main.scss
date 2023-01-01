@@ -1,0 +1,15 @@
+// Utils (variables, mixins, placeholders, functions)
+
+@import './utils/main';
+
+// Basic and global styles
+
+@import './base/main';
+
+// Common elements
+
+@import './common/main';
+
+// Page layout
+
+@import './layout/main';
