@@ -15,7 +15,7 @@ h6 {
 
 /* ul */
 
-.list {
+ul {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -24,13 +24,13 @@ h6 {
 
 /* button */
 
-.btn {
+button {
   cursor: pointer;
 }
 
 /* responsive images */
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -38,7 +38,7 @@ h6 {
 
 /* a */
 
-.link {
+a {
   display: block;
 
   text-decoration: none;
