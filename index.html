@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BarberShop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <title>GoodLyfe</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -18,6 +18,220 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
+    <!-- PAGE HEADER -->
+    <header>
+      <div class="container">
+        <!-- Page navigation -->
+        <nav class="header__nav">
+          <!-- Logo -->
+          <a href="" class="header__logo">Good<span class="header__logo--life">Life</span></a>
+          <!-- Page menu -->
+          <ul class="list header__nav-list">
+            <li class="header__nav-item"><a class="link header__nav-link" href="">classes</a></li>
+            <li class="header__nav-item"><a class="link header__nav-link" href="">timetable</a></li>
+            <li class="header__nav-item"><a class="link header__nav-link" href="">clubs</a></li>
+            <li class="header__nav-item"><a class="link header__nav-link" href="">nutrition</a></li>
+            <li class="header__nav-item">
+              <a class="link header__nav-link" href="">free trial</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Search button -->
+        <form class="header__search-form">
+          <input class="header__search-input" type="text" placeholder="search" name="nav-search" />
+          <button class="header__search-button" type="button"></button>
+        </form>
+        <!-- Login button -->
+        <button class="header__btn-login">login</button>
+      </div>
+    </header>
+    <!-- PAGE MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="contain">
+          <h1 class="hero__title">Welcome to Goodlyfe Gyms</h1>
+          <button class="hero__btn" type="button">See the benefits</button>
+          <div class="hero__thumb slider"></div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="faq">
+        <div class="container">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <h2 clss="faq__title">Meet your new body</h2>
+          <p class="faq__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
+            magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
+            ut imperdiet augue.
+          </p>
+          <button class="faq__btn" type="button">View the FAQ</button>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container">
+          <h2 class="cta__title">Become more than you are.</h2>
+          <p class="cta__text">
+            Staying active is great fun and keeps you healthy. Check out how you can join in.
+          </p>
+          <button class="cta__bnt" type="button">Let’s do it!</button>
+          <div class="cta__thumb slider"></div>
+        </div>
+      </section>
+      <!-- FACILITIES -->
+      <section class="facilities">
+        <div class="container">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <h2 clss="facilities__title">Premium Facilities</h2>
+          <p class="facilities__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
+            magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
+            ut imperdiet augue.
+          </p>
+          <button class="facilities__btn" type="button">Learn more</button>
+        </div>
+      </section>
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Real Stories from Real Customers</h2>
+          <p class="reviews__subtitle">Be inspired with these experiences.</p>
+          <ul class="reviews__list">
+            <li class="reviews__card">
+              <h3 class="reviews__card-title">3Kg lost!</h3>
+              <p class="reviews__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna.
+                Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id
+                egestasegestas risu.
+              </p>
+              <img class="reviews__customer-img" src="" alt="" />
+              <p class="reviews__customer-name">James John</p>
+              <p class="reviews__customer-type">Mother of two</p>
+            </li>
+            <li class="reviews__card">
+              <h3 class="reviews__card-title">17Kg lost!</h3>
+              <p class="reviews__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna.
+                Nulla magna tortor, bibendum in mo.
+              </p>
+              <img class="reviews__customer-img" src="" alt="" />
+              <p class="reviews__customer-name">Mary Patricia</p>
+              <p class="reviews__customer-type">Mother of two</p>
+            </li>
+            <li class="reviews__card">
+              <h3 class="reviews__card-title">43Kg lost!</h3>
+              <p class="reviews__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <img class="reviews__customer-img" src="" alt="" />
+              <p class="reviews__customer-name">Robert Micheal</p>
+              <p class="reviews__customer-type">Mother of two</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- APP -->
+      <section class="app">
+        <div class="container">
+          <h2 class="app__title">Don’t forget our app</h2>
+          <p class="app_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
+            magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
+            ut imperdiet augue.
+          </p>
+          <p>Download now:</p>
+          <ul class="app__btn-list">
+            <li class="app__btn-item">
+              <a href="" class="app__btn-link">Get it on Google Play</a>
+            </li>
+            <li class="app__btn-item">
+              <a href="" class="app__btn-link">Download on the App Store</a>
+            </li>
+          </ul>
+          <ul class="app_img-list">
+            <li class="app__img-item"><img class="app__img" src="" alt="" /></li>
+            <li class="app__img-item"><img class="app__img" src="" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <!-- SOCIAL -->
+      <section class="social">
+        <div class="container">
+          <h2 class="social__title">Social</h2>
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link" href=""></a></li>
+            <li class="social__item"><a class="social__link" href=""></a></li>
+            <li class="social__item"><a class="social__link" href=""></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- PAGE FOOTER -->
+    <footer>
+      <div class="container">
+        <!-- Upper footer -->
+       
+        <ul class="footer__upper">
+           <!-- Logo and social links -->
+          <li class="footer__block">
+            <a class="footer__logo" href="">Goodlyfe</a>
+            <p class="footer__text">
+              Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis
+              volutpat. Cursus sed massa non nisi, placerat.
+            </p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__social-link" href=""></a></li>
+              <li class="footer__social-item"><a class="footer__social-link" href=""></a></li>
+              <li class="footer__social-item"><a class="footer__social-link" href=""></a></li>
+              <li class="footer__social-item"><a class="footer__social-link" href=""></a></li>
+            </ul>
+          </li>
+          <!-- Quick links -->
+          <li class="footer__block">
+            <p>Quick Links</p>
+            <ul class="footer__nav">
+              <li class="footer__nav-item"><a class="footer__nav-link" href="">Classes</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="">Timetable</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="">Clubs</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="">Nutrition</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="">Free Trial</a></li>
+            </ul>
+          </li>
+          <!-- Guides -->
+          <li class="footer__block">
+            <p>Guides</p>
+            <ul class="footer__guide-list">
+              <li class="footer__guide-item"><a class="footer__guide-link" href="">Weight Loss</a></li>
+              <li class="footer__guide-item"><a class="footer__guide-link" href="">Strength Gain</a></li>
+              <li class="footer__guide-item"><a class="footer__guide-link" href="">Crossfit</a></li>
+              <li class="footer__guide-item"><a class="footer__guide-link" href="">Washbaord Abs</a></li>
+              <li class="footer__guide-item"><a class="footer__guide-link" href="">Dieting</a></li>
+            </ul>
+          </li>
+          <!-- Reach us -->
+          <li class="footer__block">
+            <p>Reach us</p>
+            <address class="footer__address">
+              <ul class="footer__address-list">
+                <li class="footer__address-item"><a class="footer__address-link" href="mailto:admin@goodlyfe.co">admin@goodlyfe.co</a></li>
+                <li class="footer__address-item"><a class="footer__address-link" href="tel:+889876543210">+88 98765 43210</a></li>
+                <li class="footer__address-item"><a class="footer__address-link" href="">90210 Beverly Hills<br>California USA</a></li>
+              </ul>
+            </address>
+          </li>
+        </ul>
+        <!-- Lower footer -->
+        <p>&#169; 2020 GoodLyfe. All rights reserved</p>
+        <ul class="footer__terms-list">
+          <li class="footer__terms-item"><a class="footer__terms-link" href="">Terms & Conditions</a></li>
+          <li class="footer__terms-item"><a class="footer__terms-link" href="">Privacy Policy</a></li>
+          <li class="footer__terms-item"><a class="footer__terms-link" href="">Sitemap</a></li>
+          <li class="footer__terms-item"><a class="footer__terms-link" href="">Disclaimer</a></li>
+        </ul>       
+      </div>
+    </footer>
   </body>
 </html>

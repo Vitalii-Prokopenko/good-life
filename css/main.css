@@ -1,3 +1,28 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins.eot") url("../fonts/Poppins.eot");
+  src: local("☺"), url("../fonts/Poppins.woff") format("woff"), url("../fonts/Poppins.ttf") format("truetype"), url("../fonts/Poppins.svg") format("svg");
+  font-weight: 400 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url("../../fonts/Manrope.eot");
+  src: local("☺"), url("../fonts/Manrope.woff") format("woff"), url("../fonts/Manrope.ttf") format("truetype"), url("../fonts/Manrope.svg") format("svg");
+  font-weight: 400 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: local("☺"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype"), url("../fonts/OpenSans-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
 /* == BASIC PAGE STYLES == */ /* == GLOBAL STYLES RESET == */
 /* headings and paragraphs */
 p,
