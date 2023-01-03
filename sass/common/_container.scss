@@ -2,4 +2,18 @@
 
 .container {
   margin: 0 auto;
+  padding: 0;
+
+  @include mobile {
+    width: $minMobile;
   }
+
+  @include resp-desktop {
+    min-width: $minTablet;
+    max-width: $minDesktop;
+  }
+
+  @include adapt-desktop {
+    width: $minDesktop;
+  }
+}

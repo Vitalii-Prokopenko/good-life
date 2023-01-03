@@ -13,21 +13,6 @@ h6 {
   margin-bottom: 0;
 }
 
-/* ul */
-
-ul {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-/* button */
-
-button {
-  cursor: pointer;
-}
-
 /* responsive images */
 
 img {
@@ -36,9 +21,30 @@ img {
   height: auto;
 }
 
+/* address */ 
+
+address {
+  font-style: normal;
+}
+
+/* ul */
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* button */
+
+.btn {
+  cursor: pointer;
+}
+
 /* a */
 
-a {
+.link {
   display: block;
 
   text-decoration: none;
