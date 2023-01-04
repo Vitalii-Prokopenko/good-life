@@ -19,12 +19,12 @@
   </head>
   <body>
     <!-- PAGE HEADER -->
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="container header__container">
         <!-- Page navigation -->
         <nav class="header__nav">
           <!-- Logo -->
-          <a href="" class="header__logo">Good<span class="header__logo--life">Life</span></a>
+          <a href="" class="link logo header__logo">Good<span class="logo--life">life</span></a>
           <!-- Page menu -->
           <ul class="list header__nav-list">
             <li class="header__nav-item"><a class="link header__nav-link" href="">classes</a></li>
@@ -39,19 +39,35 @@
         <!-- Search button -->
         <form class="header__search-form">
           <input class="header__search-input" type="text" placeholder="search" name="nav-search" />
-          <button class="header__search-button" type="button"></button>
+          <button class="btn header__search-button" type="button">
+            <svg class="header__search-icon" width="15.12" height="15.01">
+              <use href="images/icons/icons.svg#icon-search"></use>
+            </svg>
+          </button>
         </form>
         <!-- Login button -->
-        <button class="header__btn-login">login</button>
+        <button class="btn header__btn-login">login</button>
+        <!-- == Mobile menu open-button == -->
+        <button
+          class="btn menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="24" height="16" aria-label="Mobile menu button">
+            <use class="icon-open" href="images/icons/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- PAGE MAIN CONTENT -->
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="contain">
+        <div class="container">
           <h1 class="hero__title">Welcome to Goodlyfe Gyms</h1>
-          <button class="hero__btn" type="button">See the benefits</button>
+          <button class="btn hero__btn btn-colored btn-colored--benefits" type="button">
+            See the benefits
+          </button>
           <div class="hero__thumb slider"></div>
         </div>
       </section>
@@ -66,7 +82,9 @@
             magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
             ut imperdiet augue.
           </p>
-          <button class="faq__btn" type="button">View the FAQ</button>
+          <button class="btn faq__btn btn-transparent btn-transparent--faq" type="button">
+            View the FAQ
+          </button>
         </div>
       </section>
       <!-- CTA -->
@@ -76,7 +94,9 @@
           <p class="cta__text">
             Staying active is great fun and keeps you healthy. Check out how you can join in.
           </p>
-          <button class="cta__bnt" type="button">Let’s do it!</button>
+          <button class="btn cta__bnt btn-colored btn-colored--cta" type="button">
+            Let’s do it!
+          </button>
           <div class="cta__thumb slider"></div>
         </div>
       </section>
@@ -91,7 +111,12 @@
             magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
             ut imperdiet augue.
           </p>
-          <button class="facilities__btn" type="button">Learn more</button>
+          <button
+            class="btn facilities__btn btn-transparent btn-transparent--facilities"
+            type="button"
+          >
+            Learn more
+          </button>
         </div>
       </section>
       <!-- REVIEWS -->

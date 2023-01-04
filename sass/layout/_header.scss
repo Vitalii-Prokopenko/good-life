@@ -1,0 +1,64 @@
+/* === HEADER === */
+
+.header {
+  height: 64px;
+  background-color: $accentColor;
+
+  &__container {
+    padding-left: 16px;
+    padding-right: 24px;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-list {
+    @include less-then-tablet {
+      display: none;
+    }
+  }
+
+  &__btn-login {
+    @include less-then-tablet {
+      display: none;
+    }
+  }
+
+  &__search-input {
+    @include less-then-tablet {
+      display: none;
+    }
+  }
+
+  &__search-button {
+    @extend %btn-icon;
+  }
+
+  &__search-icon {
+    fill: $secondColor;
+    @include my-transition(fill);   
+  }
+
+  &__search-button:hover &__search-icon {
+      fill: $logoAccentColor;
+    }
+}
+
+.menu-toggle {
+  @extend %btn-icon;
+
+  fill: $secondColor;
+  @include my-transition(fill);
+
+  @include desktop {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $logoAccentColor;
+  }
+}

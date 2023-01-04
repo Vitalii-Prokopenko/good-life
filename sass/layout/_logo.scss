@@ -1,0 +1,14 @@
+/* === LOGO === */
+
+.logo {
+  font-family: $mainFont;
+  font-weight: 800;
+  font-size: 21.8182px;
+  line-height: calc(24 / 21.8182);
+
+  color: $secondColor;
+
+  &--life {
+    color: $logoAccentColor;
+  }
+}
