@@ -18,9 +18,7 @@
 // Common styles of buttons
 
 %btn-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 
   width: 237px;
   height: 68px;

@@ -8,10 +8,9 @@
     width: $minMobile;
   }
 
-  @include resp-desktop {
-    min-width: $minTablet;
-    max-width: $minDesktop;
-  }
+  // @include resp-desktop {
+  //   width: 100vw;
+  // }
 
   @include adapt-desktop {
     width: $minDesktop;

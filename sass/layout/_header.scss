@@ -4,6 +4,12 @@
   height: 64px;
   background-color: $accentColor;
 
+  @include desktop {
+    height: 101px;
+  }
+
+  // Container
+
   &__container {
     padding-left: 16px;
     padding-right: 24px;
@@ -13,39 +19,161 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  &__nav-list {
-    @include less-then-tablet {
-      display: none;
+    @include desktop {
+      padding-left: 36px;
+      padding-right: 41px;
     }
   }
 
-  &__btn-login {
+  // Page navigation
+
+  &__nav {    
     @include less-then-tablet {
-      display: none;
+      margin-right: auto;   
+    }
+      
+    @include desktop {      
+      display: flex;
+      align-items: center;
+    }
+
+    @include resp-desktop {
+      flex-basis: 72%;
+      justify-content: space-between;
+    }
+  }
+
+  // Page menu
+
+  &__nav-list {
+    display: none;
+
+    @include desktop {
+      display: flex;
+    }
+
+    @include resp-desktop {
+      justify-content: space-between;
+      flex-basis: 67%;
+    }
+  }
+
+  &__nav-item:not(:last-child) {
+    @include desktop {
+      margin-right: 76px;
+    }
+
+    @include resp-desktop {
+      margin-right: auto;
+    }
+  }
+
+  &__nav-link {
+    @include desktop {
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(18 / 16);
+      text-transform: capitalize;
+
+      color: $secondColor;
+
+      @include my-transition(color);
+      @include my-transition(transform);
+
+      &:hover,
+      &:focus {
+        color: $logoAccentColor;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // Buttons
+
+  &__buttons-wrap {
+    display: flex;
+    align-items: center;
+
+    @include resp-desktop {
+      flex-basis: 19.4%;
+    }
+  }
+
+  // Search form
+
+  &__search-form {
+    margin-right: 25px;
+
+    @include desktop {
+      margin-right: 37px;
+    }
+
+    @include resp-desktop {
+      margin-right: auto;
     }
   }
 
   &__search-input {
-    @include less-then-tablet {
-      display: none;
-    }
+    display: none;
   }
+
+  // Search button
 
   &__search-button {
     @extend %btn-icon;
   }
 
+  &__search-text {
+    @include less-then-tablet {
+      display: none;
+    }
+
+    margin-right: 6px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+
+    color: $secondColor;
+  }
+
   &__search-icon {
     fill: $secondColor;
-    @include my-transition(fill);   
+
+    @include my-transition(fill);
   }
 
   &__search-button:hover &__search-icon {
-      fill: $logoAccentColor;
+    fill: $logoAccentColor;
+  }
+
+  // Login button
+
+  &__btn-login {
+    @include less-then-tablet {
+      display: none;
     }
+
+    width: 166px;
+    height: 50px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+
+    background-color: $secondColor;
+
+    @include resp-desktop {
+      width: 100px;
+    }
+  }
 }
+
+// Mobile menu open button
 
 .menu-toggle {
   @extend %btn-icon;

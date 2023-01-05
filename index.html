@@ -36,17 +36,25 @@
             </li>
           </ul>
         </nav>
-        <!-- Search button -->
-        <form class="header__search-form">
-          <input class="header__search-input" type="text" placeholder="search" name="nav-search" />
-          <button class="btn header__search-button" type="button">
-            <svg class="header__search-icon" width="15.12" height="15.01">
-              <use href="images/icons/icons.svg#icon-search"></use>
-            </svg>
-          </button>
-        </form>
-        <!-- Login button -->
-        <button class="btn header__btn-login">login</button>
+        <div class="header__buttons-wrap">
+          <!-- Search button -->
+          <form class="header__search-form">
+            <input
+              class="header__search-input"
+              type="text"
+              placeholder="search"
+              name="nav-search"
+            />
+            <button class="btn header__search-button" type="button">
+              <p class="header__search-text">Search</p>
+              <svg class="header__search-icon" width="15.12" height="15.01">
+                <use href="images/icons/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- Login button -->
+          <button class="btn btn-transparent header__btn-login">login</button>
+        </div>
         <!-- == Mobile menu open-button == -->
         <button
           class="btn menu-toggle js-open-menu"

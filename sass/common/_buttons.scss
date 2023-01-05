@@ -1,6 +1,6 @@
 /* === BUTTONS === */
 
-/* == Desktop screen buttons == */
+/* == Colored buttons == */
 
 .btn-colored {
   @extend %btn-text;
@@ -13,6 +13,7 @@
 
   color: $secondColor;
   background-color: $accentColor;
+
   @include my-transition(background-color);
   @include my-transition(border);
 
@@ -39,21 +40,24 @@
   }
 }
 
+/* == Transparent buttons == */ 
+
 .btn-transparent {
   position: relative;
   @extend %btn-text;
   @extend %btn-body;
   @extend %btn-border-radius;
 
-  font-family: $mainFont;
+  // font-family: $mainFont;
 
   border: 2px solid $accentColor;
-
   color: $accentColor;
   background-color: transparent;
+
   @include my-transition(color);
   @include my-transition(border-color);
   @include my-transition(border);
+  @include my-transition(background-color);
 
   &:before {
     content: '';
@@ -85,7 +89,7 @@
   &:hover {
     color: $hoverColor;
     border-color: $hoverColor;
-    box-shadow: inset 0 0 30px 5px $hoverShadowColor;
+    background-color: $hoverShadowColor;
   }
 
   &:focus {
@@ -96,7 +100,4 @@
     }
   }
 }
-
-/* == Mobile screen buttons == */
-
 
