@@ -1,0 +1,106 @@
+/* === HERO === */
+
+.hero {
+  height: 423px; 
+
+  @include desktop {
+    height: 697px;
+  }
+
+// Container
+
+  &__container {
+    position: relative;
+
+    height: 100%;   
+  }
+
+// Title
+
+  &__title {
+    position: absolute;
+    top: 103px;
+    left: 0;
+    z-index: 999;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(36 / 32);
+    text-align: center;
+
+    color: $secondColor;
+
+    @include desktop {
+        top: 241px;
+        left: 370px;
+
+        width: 700px;
+       font-size: 70px;
+    line-height: calc(77 / 70); 
+    }
+
+    &--lyfe {
+        color: $logoAccentColor;
+    }
+  }
+
+//   Button
+
+  &__btn {
+    position: absolute;
+    top: 192px;
+    left: 160px;
+    z-index: 999;
+
+    transform: translateX(-50%);
+
+    @include desktop {
+        top: 421px;
+        left: 720px;
+         
+    }
+  }
+
+//   Wave over slider
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+}
+
+// Swiper with pagination
+
+.swiper {
+  width: 320px;
+  height: 423px;
+
+  @include desktop {
+    width: 1440px;
+    height: 697px;
+  }
+}
+
+.swiper-pagination {
+  margin-bottom: 28px;
+  @include centered;
+
+  @include desktop {
+    margin-bottom: 43px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $secondColor;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 17px;
+  height: 17px;
+  background-color: $accentColor;
+}

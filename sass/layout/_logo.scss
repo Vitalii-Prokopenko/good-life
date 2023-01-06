@@ -22,7 +22,7 @@
     flex-basis: 17%;
   }
 
-  &--life {
+  &--lyfe {
     color: $logoAccentColor;
 
     @include my-transition(color);
@@ -35,8 +35,8 @@
     transform: scale(1.1);
   }
 
-  &:hover &--life,
-  &:focus &--life {
+  &:hover &--lyfe,
+  &:focus &--lyfe {
     color: $secondColor;
     transform: scale(1.1);
   }
