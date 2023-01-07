@@ -1,0 +1,93 @@
+/* === FACILITIES === */
+
+.facilities {
+  margin-bottom: 28px;
+
+  @include desktop {
+    margin-bottom: 108px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 262px;
+    height: 313px;
+
+    @include less-then-tablet {
+      margin-bottom: 14px;
+    }
+
+    @include desktop {
+      width: 440px;
+      height: 503px;
+    }
+  }
+
+  &__img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include desktop {
+      width: 347px;
+      height: 399px;
+    }
+  }
+
+  &__img:nth-child(2) {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    @include desktop {
+      width: 241px;
+      height: 359px;
+    }
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(48 / 40);
+
+    color: $accentColor;
+
+    @include desktop {
+      margin-bottom: 6px;
+
+      line-height: calc(60 / 40);
+    }
+  }
+
+  &__text {
+    margin-bottom: 42px;
+
+    width: 269px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+
+    color: $mainColor;
+
+    @include desktop {
+      margin-bottom: 19px;
+
+      width: 540px;
+
+      line-height: calc(37 / 16);
+    }
+  }
+}
