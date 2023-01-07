@@ -4,9 +4,7 @@
   &__container {
     margin-bottom: 23px;
     padding-left: 16px;
-    padding-right: 16px;
-
-    outline: 1px solid teal;
+    padding-right: 16px;    
 
     @include desktop {
       margin-bottom: 122px;
@@ -23,8 +21,7 @@
     position: relative;
 
     width: 262px;
-    height: 313px;
-    outline: 1px solid crimson;
+    height: 313px;    
 
     @include less-then-tablet {
       margin-bottom: 14px;

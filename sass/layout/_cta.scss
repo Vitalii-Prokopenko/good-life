@@ -1,0 +1,124 @@
+/* === CTA === */
+
+.cta {
+  margin-bottom: 74px;
+  height: 443px;
+
+  @include desktop {
+    margin-bottom: 224px;
+    height: 700px;
+  }
+
+  &__container {
+    position: relative;
+
+    height: 100%;
+  }
+
+  // Slider
+
+  &__swiper {
+    width: 320px;
+    height: 443px;
+
+    @include desktop {
+      width: 1440px;
+      height: 700px;
+    }
+  }
+
+  &__swiper-pagination {
+    margin-bottom: 25px;
+    @include centered;
+
+    @include desktop {
+      margin-bottom: 26px;
+    }
+  }
+
+  & .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $secondColor;
+    border-radius: 50%;
+    opacity: 1;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  & .swiper-pagination-bullet-active {
+    width: 17px;
+    height: 17px;
+    background-color: $accentColor;
+  }
+
+  // Text wrap
+
+  &__text-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    padding-top: 75px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      padding-top: 231px;
+    }
+  }
+
+  // Title
+
+  &__title {
+    margin-bottom: 25px;
+
+    width: 252px;
+
+    font-weight: 700;
+    font-size: 42.4615px;
+    line-height: calc(46 / 42.4615);
+    text-align: center;
+
+    color: $secondColor;
+    text-shadow: 0px 0px 53.0769px rgba(0, 0, 0, 0.46023);
+
+    @include desktop {
+      width: 850px;
+      font-size: 60px;
+      line-height: calc(90 / 60);
+      text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46023);
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+
+    width: 257px;
+
+    font-family: $additionalFont;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    text-align: center;
+
+    color: $secondColor;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+    @include desktop {
+      margin-bottom: 20px;
+
+      width: 433px;
+
+      font-size: 17px;
+      line-height: calc(23 / 17);
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
