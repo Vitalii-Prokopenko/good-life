@@ -77,12 +77,12 @@
       <section class="hero">
         <div class="container hero__container">
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper hero__swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper hero__swiper-wrapper">
               <!-- Slides -->
               <!-- Slide 1 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hero__swiper-slide">
                 <picture class="hero__picture">
                   <source
                     media="(min-width: 1440px)"
@@ -108,11 +108,16 @@
                     sizes="(min-width: 320px) 320px, 100vw"
                     type="image/jpeg"
                   />
-                  <img class="hero__img" src="images/hero/hero1-mobile-320.jpg" alt="woman" />
+                  <img
+                    class="hero__img"
+                    src="images/hero/hero1-mobile-320.jpg"
+                    alt="female working out"
+                    loading="lazy"
+                  />
                 </picture>
               </div>
               <!-- Slide 2 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hero__swiper-slide">
                 <picture class="hero__picture">
                   <source
                     media="(min-width: 1440px)"
@@ -138,11 +143,16 @@
                     sizes="(min-width: 320px) 320px, 100vw"
                     type="image/jpeg"
                   />
-                  <img class="hero__img" src="images/hero/hero2-mobile-320.jpg" alt="woman" />
+                  <img
+                    class="hero__img"
+                    src="images/hero/hero2-mobile-320.jpg"
+                    alt="male working out"
+                    loading="lazy"
+                  />
                 </picture>
               </div>
               <!-- Slide 3 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hero__swiper-slide">
                 <picture class="hero__picture">
                   <source
                     media="(min-width: 1440px)"
@@ -168,11 +178,16 @@
                     sizes="(min-width: 320px) 320px, 100vw"
                     type="image/jpeg"
                   />
-                  <img class="hero__img" src="images/hero/hero3-mobile-320.jpg" alt="woman" />
+                  <img
+                    class="hero__img"
+                    src="images/hero/hero3-mobile-320.jpg"
+                    alt="female working out"
+                    loading="lazy"
+                  />
                 </picture>
               </div>
               <!-- Slide 4 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hero__swiper-slide">
                 <picture class="hero__picture">
                   <source
                     media="(min-width: 1440px)"
@@ -198,11 +213,16 @@
                     sizes="(min-width: 320px) 320px, 100vw"
                     type="image/jpeg"
                   />
-                  <img class="hero__img" src="images/hero/hero4-mobile-320.jpg" alt="woman" />
+                  <img
+                    class="hero__img"
+                    src="images/hero/hero4-mobile-320.jpg"
+                    alt="male working out"
+                    loading="lazy"
+                  />
                 </picture>
               </div>
               <!-- Slide 5 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hero__swiper-slide">
                 <picture class="hero__picture">
                   <source
                     media="(min-width: 1440px)"
@@ -228,12 +248,17 @@
                     sizes="(min-width: 320px) 320px, 100vw"
                     type="image/jpeg"
                   />
-                  <img class="hero__img" src="images/hero/hero5-mobile-320.jpg" alt="woman" />
+                  <img
+                    class="hero__img"
+                    src="images/hero/hero5-mobile-320.jpg"
+                    alt="female working out"
+                    loading="lazy"
+                  />
                 </picture>
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination hero__swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
             <!-- <div class="swiper-button-prev"></div>
@@ -242,7 +267,9 @@
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
-          <h1 class="hero__title">Welcome to Good<span class="hero__title--lyfe">lyfe</span> Gyms</h1>
+          <h1 class="hero__title">
+            Welcome to Good<span class="hero__title--lyfe">lyfe</span> Gyms
+          </h1>
           <button class="btn hero__btn btn-colored btn-colored--benefits" type="button">
             See the benefits
           </button>
@@ -268,18 +295,50 @@
       </section>
       <!-- FAQ -->
       <section class="faq">
-        <div class="container">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <h2 clss="faq__title">Meet your new body</h2>
-          <p class="faq__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
-            magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
-            ut imperdiet augue.
-          </p>
-          <button class="btn faq__btn btn-transparent btn-transparent--faq" type="button">
-            View the FAQ
-          </button>
+        <div class="container faq__container">
+          <div class="faq__img-wrap">
+            <img
+              srcset="
+                images/meet/meet1-mobile-176.jpg      176w,
+                images/meet/meet1-desktop-347.jpg     347w,
+                images/meet/meet1-mobile-@2x-352.jpg  352w,
+                images/meet/meet1-desktop-@2x-694.jpg 694w
+              "
+              sizes="(min-width: 1440px) 347px, (min-width: 320px) 176px, 100vw"
+              src="images/meet/meet1-mobile-176.jpg"
+              alt="male working out"
+              loading="lazy"
+              width="176"
+              height="248"
+              class="faq__img"
+            />
+            <img
+              srcset="
+                images/meet/meet2-mobile-146.jpg      176w,
+                images/meet/meet2-desktop-241.jpg     241w,
+                images/meet/meet2-mobile-@2x-292.jpg  292w,
+                images/meet/meet2-desktop-@2x-482.jpg 482w
+              "
+              sizes="(min-width: 1440px) 241px, (min-width: 320px) 146px, 100vw"
+              src="images/meet/meet2-mobile-146.jpg"
+              alt="female working out"
+              loading="lazy"
+              width="146"
+              height="218"
+              class="faq__img"
+            />
+          </div>
+          <div class="faq__text-wrap">
+            <h2 class="faq__title">Meet your new body</h2>
+            <p class="faq__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna.
+              Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas
+              risus, ut imperdiet augue.
+            </p>
+            <button class="btn faq__btn btn-transparent btn-transparent--faq" type="button">
+              View the FAQ
+            </button>
+          </div>
         </div>
       </section>
       <!-- CTA -->

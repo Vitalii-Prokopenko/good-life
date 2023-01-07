@@ -38,10 +38,10 @@
       align-items: center;
     }
 
-    @include resp-desktop {
-      flex-basis: 72%;
-      justify-content: space-between;
-    }
+    // @include resp-desktop {
+    //   flex-basis: 72%;
+    //   justify-content: space-between;
+    // }
   }
 
   // Page menu
@@ -53,10 +53,10 @@
       display: flex;
     }
 
-    @include resp-desktop {
-      justify-content: space-between;
-      flex-basis: 67%;
-    }
+    // @include resp-desktop {
+    //   justify-content: space-between;
+    //   flex-basis: 67%;
+    // }
   }
 
   &__nav-item:not(:last-child) {
@@ -64,9 +64,9 @@
       margin-right: 76px;
     }
 
-    @include resp-desktop {
-      margin-right: auto;
-    }
+    // @include resp-desktop {
+    //   margin-right: auto;
+    // }
   }
 
   &__nav-link {
@@ -98,9 +98,9 @@
     display: flex;
     align-items: center;
 
-    @include resp-desktop {
-      flex-basis: 19.4%;
-    }
+    // @include resp-desktop {
+    //   flex-basis: 19.4%;
+    // }
   }
 
   // Search form
@@ -112,9 +112,9 @@
       margin-right: 37px;
     }
 
-    @include resp-desktop {
-      margin-right: auto;
-    }
+    // @include resp-desktop {
+    //   margin-right: auto;
+    // }
   }
 
   &__search-input {
@@ -167,9 +167,15 @@
 
     background-color: $secondColor;
 
+    @include my-transition(box-shadow);
+
     @include resp-desktop {
       width: 100px;
     }
+
+&:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
   }
 }
 

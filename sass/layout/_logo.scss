@@ -17,10 +17,10 @@
     line-height: calc(44 / 40);
   }
 
-  @include resp-desktop {
-    margin-right: auto;
-    flex-basis: 17%;
-  }
+  // @include resp-desktop {
+  //   margin-right: auto;
+  //   flex-basis: 17%;
+  // }
 
   &--lyfe {
     color: $logoAccentColor;
