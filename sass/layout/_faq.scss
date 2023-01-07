@@ -1,13 +1,17 @@
 /* === FAQ === */
 
 .faq {
+  margin-bottom: 23px;
+
+  @include desktop {
+    margin-bottom: 122px;
+  }
+
   &__container {
-    margin-bottom: 23px;
     padding-left: 16px;
-    padding-right: 16px;    
+    padding-right: 16px;
 
     @include desktop {
-      margin-bottom: 122px;
       padding-left: 141px;
       padding-right: 140px;
 
@@ -21,7 +25,7 @@
     position: relative;
 
     width: 262px;
-    height: 313px;    
+    height: 313px;
 
     @include less-then-tablet {
       margin-bottom: 14px;

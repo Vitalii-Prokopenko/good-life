@@ -500,14 +500,20 @@ body {
 }
 
 /* === FAQ === */
-.faq__container {
+.faq {
   margin-bottom: 23px;
+}
+@media screen and (min-width: 768px) {
+  .faq {
+    margin-bottom: 122px;
+  }
+}
+.faq__container {
   padding-left: 16px;
   padding-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .faq__container {
-    margin-bottom: 122px;
     padding-left: 141px;
     padding-right: 140px;
     display: -webkit-box;
@@ -719,10 +725,22 @@ body {
 /* === FACILITIES === */
 .facilities {
   margin-bottom: 28px;
+  outline: 1px solid maroon;
 }
 @media screen and (min-width: 768px) {
   .facilities {
     margin-bottom: 108px;
+  }
+}
+.facilities__container {
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: 1px solid magenta;
+}
+@media screen and (min-width: 768px) {
+  .facilities__container {
+    padding-left: 155px;
+    padding-right: 79px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -740,18 +758,18 @@ body {
 }
 .facilities__img-wrap {
   position: relative;
-  width: 262px;
-  height: 313px;
+  width: 275px;
+  height: 198px;
 }
 @media screen and (max-width: 767px) {
   .facilities__img-wrap {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) {
   .facilities__img-wrap {
-    width: 440px;
-    height: 503px;
+    width: 572px;
+    height: 435px;
   }
 }
 .facilities__img:nth-child(1) {
@@ -761,19 +779,20 @@ body {
 }
 @media screen and (min-width: 768px) {
   .facilities__img:nth-child(1) {
-    width: 347px;
-    height: 399px;
+    width: 444px;
+    height: 296px;
   }
 }
 .facilities__img:nth-child(2) {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .facilities__img:nth-child(2) {
-    width: 241px;
-    height: 359px;
+    width: 422px;
+    height: 281px;
   }
 }
 .facilities__text-wrap {
@@ -786,7 +805,7 @@ body {
           flex-direction: column;
 }
 .facilities__title {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
@@ -794,12 +813,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .facilities__title {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     line-height: 1.5;
   }
 }
 .facilities__text {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
   width: 269px;
   font-weight: 400;
   font-size: 16px;
@@ -809,7 +828,7 @@ body {
 @media screen and (min-width: 768px) {
   .facilities__text {
     margin-bottom: 19px;
-    width: 540px;
+    width: 489px;
     line-height: 2.3125;
   }
 }/*# sourceMappingURL=main.css.map */

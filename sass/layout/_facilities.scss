@@ -5,26 +5,40 @@
 
   @include desktop {
     margin-bottom: 108px;
+  }
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+  outline: 1px solid maroon;
+
+  &__container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include desktop {
+      padding-left: 155px;
+      padding-right: 79px;
+
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    outline: 1px solid magenta;
   }
 
   &__img-wrap {
     position: relative;
 
-    width: 262px;
-    height: 313px;
+    width: 275px;
+    height: 198px;
 
     @include less-then-tablet {
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     @include desktop {
-      width: 440px;
-      height: 503px;
+      width: 572px;
+      height: 435px;
     }
   }
 
@@ -34,8 +48,8 @@
     left: 0;
 
     @include desktop {
-      width: 347px;
-      height: 399px;
+      width: 444px;
+      height: 296px;
     }
   }
 
@@ -43,10 +57,11 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
+    z-index: -1;
 
     @include desktop {
-      width: 241px;
-      height: 359px;
+      width: 422px;
+      height: 281px;
     }
   }
 
@@ -56,7 +71,7 @@
   }
 
   &__title {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 
     font-weight: 700;
     font-size: 40px;
@@ -65,14 +80,14 @@
     color: $accentColor;
 
     @include desktop {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
 
       line-height: calc(60 / 40);
     }
   }
 
   &__text {
-    margin-bottom: 42px;
+    margin-bottom: 36px;
 
     width: 269px;
 
@@ -85,7 +100,7 @@
     @include desktop {
       margin-bottom: 19px;
 
-      width: 540px;
+      width: 489px;
 
       line-height: calc(37 / 16);
     }
