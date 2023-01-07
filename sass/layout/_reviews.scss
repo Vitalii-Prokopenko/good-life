@@ -1,0 +1,229 @@
+/* === REVIEWS === */
+
+.reviews {
+  background: linear-gradient(180deg, $secondColor 0%, rgba(255, 255, 255, 0) 100%),
+    $reviewsBgGradientColor;
+
+  @include desktop {
+    height: 900px;
+  }
+
+  &__container {
+    padding-top: 48px;
+    padding-left: 28px;
+    padding-bottom: 37px;
+    height: 100%;
+
+    outline: 1px solid crimson;
+
+    @include desktop {
+      padding-top: 126px;
+      padding-left: 254px;
+      padding-bottom: 81px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6.44px;
+    width: 225px;
+
+    font-weight: 600;
+    font-size: 26.1389px;
+    line-height: calc(31 / 26.1389);
+
+    color: $mainColor;
+
+    @include desktop {
+      margin-bottom: 12px;
+      width: 414px;
+
+      font-size: 48px;
+      line-height: calc(57 / 48);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+
+    font-weight: 400;
+    font-size: 9.8021px;
+    line-height: calc(15 / 9.8021);
+
+    color: $mainColor;
+
+    @include desktop {
+      margin-bottom: 27px;
+
+      font-size: 18px;
+      line-height: calc(27 / 18);
+    }
+  }
+
+  &__list {
+    @include less-then-tablet {
+      display: flex;
+      overflow: hidden;
+    }
+
+    @include desktop {
+      position: relative;
+    }
+  }
+
+  &__card {
+    padding: 24px 22px 25px 19px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 243px;
+    height: 306px;
+    border-radius: 6.96629px;
+
+    background-color: $secondColor;
+    box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+
+    @include desktop {
+      position: absolute;
+
+      padding: 35px 32px 36px 27px;
+
+      border-radius: 10px;
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.18);
+    }
+
+    &:nth-child(1) {
+      @include desktop {
+        top: 0;
+        left: 97px;
+
+        width: 349px;
+        height: 445px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include desktop {
+        top: -141px;
+        left: 479px;
+
+        padding-top: 46px;
+
+        width: 449px;
+        height: 343px;
+      }
+    }
+
+    &:nth-child(3) {
+      @include desktop {
+        top: 235px;
+        left: 479px;
+
+        padding-top: 31px;
+        padding-bottom: 30px;
+
+        width: 351px;
+        height: 278px;
+      }
+    }
+
+    &:not(:last-child) {
+      @include less-then-tablet {
+        margin-right: 27px;
+      }
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 26.4719px;
+    line-height: calc(32 / 26.4719);
+
+    color: $accentColor;
+
+    @include desktop {
+      font-size: 38px;
+      line-height: calc(45 / 38);
+    }
+  }
+
+  &__text-wrap {
+    margin-bottom: auto;
+
+    display: flex;
+  }
+
+  &__text-quots {
+    margin-right: 5px;
+    align-self: flex-start;
+
+    width: 20px;
+    height: 15px;
+
+    fill: rgba(228, 48, 113, 0.3);
+
+    @include desktop {
+      width: 29px;
+      height: 24px;
+    }
+  }
+
+  &__card-text {
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 12.5393px;
+    line-height: calc(22 / 12.5393);
+
+    color: $mainColor;
+
+    @include desktop {
+      font-size: 18px;
+      line-height: calc(32 / 18);
+    }
+  }
+
+  &__customer {
+    padding-left: 25px;
+
+    display: flex;
+  }
+
+  &__customer-img {
+    margin-right: 13px;
+
+    @include desktop {
+      width: 59px;
+      height: 59px;
+    }
+  }
+
+  &__customer-name {
+    font-weight: 600;
+    font-size: 12.5393px;
+    line-height: calc(24 / 12.5393);
+
+    color: $mainColor;
+
+    @include desktop {
+      font-size: 18px;
+      line-height: calc(32 / 18);
+    }
+  }
+
+  &__customer-type {
+    font-weight: 400;
+    font-size: 9.75281px;
+    line-height: calc(12 / 9.75281);
+
+    color: $customerTypeColor;
+
+    @include desktop {
+      font-size: 14px;
+      line-height: calc(20 / 14);
+    }
+  }
+}
