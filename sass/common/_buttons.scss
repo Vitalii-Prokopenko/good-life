@@ -16,6 +16,7 @@
 
   @include my-transition(background-color);
   @include my-transition(border);
+  @include my-transition(transform);
 
   &--benefits {
     @include mobile {
@@ -30,13 +31,23 @@
         height: 56px;
     }
   }
+
+  &-text {
+    color: inherit;
+    @include my-transition(color);
+  }
   
   &:hover {
     background-color: $hoverColor;
-  }
+      }
 
   &:focus {
     border: 9px solid $focusBorderColor;
+  }
+
+  &:hover &-text,
+  &:focus &-text {    
+    transform: scale(1.3);
   }
 }
 
@@ -46,9 +57,7 @@
   position: relative;
   @extend %btn-text;
   @extend %btn-body;
-  @extend %btn-border-radius;
-
-  // font-family: $mainFont;
+  @extend %btn-border-radius;  
 
   border: 2px solid $accentColor;
   color: $accentColor;
@@ -86,6 +95,11 @@
     }
   }
 
+  &-text {
+    color: inherit;
+    @include my-transition(color);
+  }
+
   &:hover {
     color: $hoverColor;
     border-color: $hoverColor;
@@ -98,6 +112,11 @@
     &:before {
       border-color: $hoverColor;
     }
+  }
+
+  &:hover &-text,
+  &:focus &-text {    
+    transform: scale(1.3);
   }
 }
 
