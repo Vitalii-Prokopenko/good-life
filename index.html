@@ -710,14 +710,14 @@
       </section>
       <!-- APP -->
       <section class="app">
-        <div class="container">
+        <div class="container app__container">
           <h2 class="app__title">Don’t forget our app</h2>
-          <p class="app_text">
+          <p class="app__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
             magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
             ut imperdiet augue.
           </p>
-          <p>Download now:</p>
+          <p class="app__cta">Download now:</p>
           <ul class="app__btn-list">
             <li class="app__btn-item">
               <a href="" class="app__btn-link">Get it on Google Play</a>
@@ -726,9 +726,79 @@
               <a href="" class="app__btn-link">Download on the App Store</a>
             </li>
           </ul>
-          <ul class="app_img-list">
-            <li class="app__img-item"><img class="app__img" src="" alt="" /></li>
-            <li class="app__img-item"><img class="app__img" src="" alt="" /></li>
+          <ul class="list app__img-list">
+            <li class="app__img-item">
+              <div class="app__wrap">
+                <!-- Screen 1 -->
+                <img
+                  srcset="
+                    images/app/app-screen1-mobile-145.jpg      145w,
+                    images/app/app-screen1-desktop-202.jpg     202w,
+                    images/app/app-screen1-mobile-@2x-290.jpg  290w,
+                    images/app/app-screen1-desktop-@2x-404.jpg 404w
+                  "
+                  sizes="(min-width: 1440px) 202px, (min-width: 320px) 145px, 100vw"
+                  src="images/app/app-screen1-mobile-145.jpg"
+                  alt="iphone screen with page content"
+                  loading="lazy"
+                  width="145"
+                  height="315"
+                  class="app__screen"
+                />
+                <!-- Mockup -->
+                <img
+                  srcset="
+                    images/app/iphone-mobile-167.png      167w,
+                    images/app/iphone-desktop-232.png     232w,
+                    images/app/iphone-mobile-@2x-334.png  334w,
+                    images/app/iphone-desktop-@2x-464.png 464w
+                  "
+                  sizes="(min-width: 1440px) 232px, (min-width: 320px) 167px, 100vw"
+                  src="images/app/iphone-mobile-167.png"
+                  alt="iphone mockup"
+                  loading="lazy"
+                  width="167"
+                  height="333"
+                  class="app__mockup"
+                />
+              </div>
+            </li>
+            <li class="app__img-item">
+              <div class="app__wrap">
+                <!-- Screen 2 -->
+                <img
+                  srcset="
+                    images/app/app-screen2-mobile-145.jpg      145w,
+                    images/app/app-screen2-desktop-202.jpg     202w,
+                    images/app/app-screen2-mobile-@2x-290.jpg  290w,
+                    images/app/app-screen2-desktop-@2x-404.jpg 404w
+                  "
+                  sizes="(min-width: 1440px) 202px, (min-width: 320px) 145px, 100vw"
+                  src="images/app/app-screen2-mobile-145.jpg"
+                  alt="iphone screen with page content"
+                  loading="lazy"
+                  width="145"
+                  height="315"
+                  class="app__screen"
+                />
+                <!-- Mockup -->
+                <img
+                  srcset="
+                    images/app/iphone-mobile-167.png      167w,
+                    images/app/iphone-desktop-232.png     232w,
+                    images/app/iphone-mobile-@2x-334.png  334w,
+                    images/app/iphone-desktop-@2x-464.png 464w
+                  "
+                  sizes="(min-width: 1440px) 232px, (min-width: 320px) 167px, 100vw"
+                  src="images/app/iphone-mobile-167.png"
+                  alt="iphone mockup"
+                  loading="lazy"
+                  width="167"
+                  height="333"
+                  class="app__mockup"
+                />
+              </div>
+            </li>
           </ul>
         </div>
       </section>
