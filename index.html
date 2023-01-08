@@ -711,21 +711,47 @@
       <!-- APP -->
       <section class="app">
         <div class="container app__container">
-          <h2 class="app__title">Don’t forget our app</h2>
-          <p class="app__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
-            magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus,
-            ut imperdiet augue.
-          </p>
-          <p class="app__cta">Download now:</p>
-          <ul class="app__btn-list">
-            <li class="app__btn-item">
-              <a href="" class="app__btn-link">Get it on Google Play</a>
-            </li>
-            <li class="app__btn-item">
-              <a href="" class="app__btn-link">Download on the App Store</a>
-            </li>
-          </ul>
+          <div class="app__text-wrap">
+            <h2 class="app__title">Don’t forget our app</h2>
+            <p class="app__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna.
+              Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas
+              risus, ut imperdiet augue.
+            </p>
+            <p class="app__cta">Download now:</p>
+            <ul class="list app__btn-list">
+              <li class="app__btn-item">
+                <a href="" class="app__btn-link">
+                  <img
+                    srcset="
+                      images/badges/google-play-badge-135.png     135w,
+                      images/badges/google-play-badge-@2x-270.png 270w
+                    "
+                    sizes="135px"
+                    src="images/badges/google-play-badge-135.png"
+                    alt="get it on google play"
+                    loading="lazy"
+                    class="app__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="app__btn-item">
+                <a href="" class="app__btn-link">
+                  <img
+                    srcset="
+                      images/badges/app-store-badge-135.png     135w,
+                      images/badges/app-store-badge-@2x-270.png 270w
+                    "
+                    sizes="135px"
+                    src="images/badges/app-store-badge-135.png"
+                    alt="download on the app store"
+                    loading="lazy"
+                    class="app__btn-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="list app__img-list">
             <li class="app__img-item">
               <div class="app__wrap">
@@ -804,12 +830,28 @@
       </section>
       <!-- SOCIAL -->
       <section class="social">
-        <div class="container">
+        <div class="container social__container">
           <h2 class="social__title">Social</h2>
-          <ul class="social__list">
-            <li class="social__item"><a class="social__link" href=""></a></li>
-            <li class="social__item"><a class="social__link" href=""></a></li>
-            <li class="social__item"><a class="social__link" href=""></a></li>
+          <ul class="list social__list">
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg class="social__icon" width="10.2" height="20.42">
+                  <use href="images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg class="social__icon" width="16.93" height="20.4">
+                  <use href="images/icons/icons.svg#icon-youtube"></use></svg>
+                </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <svg class="social__icon" width="20.45" height="20.45">
+                  <use href="images/icons/icons.svg#icon-instagram"></use></svg>
+                </a>
+            </li>
           </ul>
         </div>
       </section>

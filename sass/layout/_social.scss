@@ -1,0 +1,93 @@
+/* === SOCIAL === */
+
+.social {
+  background-color: $socialBgColor;
+
+  &__container {
+    padding-top: 44px;
+    padding-bottom: 66px;
+
+    @include desktop {
+      padding-top: 64px;
+      padding-bottom: 71px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(60 / 40);
+    text-align: center;
+
+    color: $accentColor;
+
+    @include desktop {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+
+    @include desktop {
+      margin-right: 90px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    background-color: $secondColor;
+    border: 1px solid transparent;
+    @include my-transition(border-color);
+    @include my-transition(background-color);
+
+    @include desktop {
+      width: 110px;
+      height: 110px;
+    }
+
+    &:hover {
+      background-color: $hoverShadowColor;
+      border: 1px solid $hoverColor;
+    }
+  }
+
+  &__icon {
+    @include my-transition(fill);
+    @include my-transition(transform);
+  }
+
+  &__item:nth-child(1) &__icon {
+    width: 14.96px;
+    height: 29.95px;
+  }
+
+  &__item:nth-child(2) &__icon {
+    width: 24.83px;
+    height: 29.92px;
+  }
+
+  &__item:nth-child(3) &__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__link:hover &__icon {
+    fill: $hoverColor;
+    transform: scale(1.7);
+  }
+}
