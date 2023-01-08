@@ -70,12 +70,12 @@
       }
 
       &::-webkit-scrollbar-track {
-        border-radius: 25px;
+        border-radius: 5px;
         background: $disabledColor;
       }
 
       &::-webkit-scrollbar-thumb {
-        border-radius: 25px;
+        border-radius: 5px;
         background: $accentColor;
       }
     }
@@ -99,6 +99,11 @@
 
     background-color: $secondColor;
     box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+
+    &:hover,
+    &:focus {
+      box-shadow: 3.45px 13.9px 27.85px rgba(0, 0, 0, 0.6);
+    }
 
     @include less-then-tablet {
       flex: 0 0 83%;

@@ -922,11 +922,11 @@ body {
     width: 1px;
   }
   .reviews__list::-webkit-scrollbar-track {
-    border-radius: 25px;
+    border-radius: 5px;
     background: #D37899;
   }
   .reviews__list::-webkit-scrollbar-thumb {
-    border-radius: 25px;
+    border-radius: 5px;
     background: #E43071;
   }
 }
@@ -954,6 +954,10 @@ body {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
           box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+}
+.reviews__card:hover, .reviews__card:focus {
+  -webkit-box-shadow: 3.45px 13.9px 27.85px rgba(0, 0, 0, 0.6);
+          box-shadow: 3.45px 13.9px 27.85px rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 767px) {
   .reviews__card {
