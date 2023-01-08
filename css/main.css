@@ -1184,10 +1184,6 @@ body {
     height: 464px;
   }
 }
-.app__img-item:first-child {
-  -webkit-filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
-          filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
-}
 @media screen and (min-width: 768px) {
   .app__img-item:first-child {
     position: absolute;
@@ -1201,15 +1197,11 @@ body {
     top: 122px;
     left: 210px;
     overflow-y: visible;
-    -webkit-filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
-            filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
   }
 }
-@media screen and (min-width: 768px) {
-  .app__img-item:last-child {
-    -webkit-filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
-            filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
-  }
+.app__wrap {
+  -webkit-filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+          filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
 }
 @media screen and (min-width: 768px) {
   .app__wrap {

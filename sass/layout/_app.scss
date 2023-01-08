@@ -111,7 +111,7 @@
     }
 
     &:first-child {
-      filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+      
 
       @include desktop {
         position: absolute;
@@ -126,26 +126,29 @@
         top: 122px;
         left: 210px;
         overflow-y: visible;
-        filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+        
       }
 
       @include desktop {
-        filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+        
         
       }
     }
   }
 
   &__wrap {
+    filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+
     @include desktop {
       width: 100%;
       height: 100%;
-      //   border-radius: 25px;
+      
     }
   }
 
   &__img-item:last-child &__wrap {
     position: relative;
+    
 
     @include less-then-tablet {
       width: 83.25px;
