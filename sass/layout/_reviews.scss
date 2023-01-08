@@ -62,7 +62,22 @@
   &__list {
     @include less-then-tablet {
       display: flex;
-      overflow: hidden;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+
+      &::-webkit-scrollbar {
+        width: 1px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 25px;
+        background: $disabledColor;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 25px;
+        background: $accentColor;
+      }
     }
 
     @include desktop {
@@ -71,6 +86,7 @@
   }
 
   &__card {
+    margin-bottom: 10px;
     padding: 24px 22px 25px 19px;
 
     display: flex;
@@ -83,6 +99,11 @@
 
     background-color: $secondColor;
     box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+
+    @include less-then-tablet {
+      flex: 0 0 83%;
+      scroll-snap-align: start;
+    }
 
     @include desktop {
       position: absolute;

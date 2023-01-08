@@ -892,7 +892,20 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .reviews__list::-webkit-scrollbar {
+    width: 1px;
+  }
+  .reviews__list::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background: #D37899;
+  }
+  .reviews__list::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: #E43071;
   }
 }
 @media screen and (min-width: 768px) {
@@ -901,6 +914,7 @@ body {
   }
 }
 .reviews__card {
+  margin-bottom: 10px;
   padding: 24px 22px 25px 19px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,6 +932,14 @@ body {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
           box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+}
+@media screen and (max-width: 767px) {
+  .reviews__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83%;
+            flex: 0 0 83%;
+    scroll-snap-align: start;
+  }
 }
 @media screen and (min-width: 768px) {
   .reviews__card {
