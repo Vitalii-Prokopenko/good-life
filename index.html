@@ -76,6 +76,24 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container hero__container">
+          <!-- Wave on the slider -->
+          <div class="hero__wave">
+            <picture class="hero__wave-picture">
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/wave/wave-desktop-1440.png 1440w"
+                sizes="(min-width: 1440px) 1440px, 100vw"
+                type="image/png"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="images/wave/wave-mobile-320.png 320w"
+                sizes="(min-width: 320px) 320px, 100vw"
+                type="image/png"
+              />
+              <img class="hero__wave-img" src="images/wave/wave-mobile-320.png" alt="wave" />
+            </picture>
+          </div>
           <!-- Slider main container -->
           <div class="swiper hero__swiper">
             <!-- Additional required wrapper -->
@@ -273,24 +291,6 @@
           <button class="btn hero__btn btn-colored btn-colored--benefits" type="button">
             <p class="btn-colored-text">See the benefits</p>
           </button>
-          <!-- Wave on the slider -->
-          <div class="hero__wave">
-            <picture class="hero__wave-picture">
-              <source
-                media="(min-width: 1440px)"
-                srcset="images/wave/wave-desktop-1440.png 1440w"
-                sizes="(min-width: 1440px) 1440px, 100vw"
-                type="image/png"
-              />
-              <source
-                media="(min-width: 320px)"
-                srcset="images/wave/wave-mobile-320.png 320w"
-                sizes="(min-width: 320px) 320px, 100vw"
-                type="image/png"
-              />
-              <img class="hero__wave-img" src="images/wave/wave-mobile-320.png" alt="wave" />
-            </picture>
-          </div>
         </div>
       </section>
       <!-- FAQ -->
