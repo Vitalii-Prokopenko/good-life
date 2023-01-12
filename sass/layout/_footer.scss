@@ -1,0 +1,194 @@
+/* === FOOTER === */
+
+.footer {
+  background-color: $footerBgColor;
+
+  &__container {
+    padding: 40px 32px 25px;
+  }
+
+  &__upper {
+    margin-bottom: 35px;
+  }
+
+  //   logo in footer
+
+  &__logo {
+    margin-bottom: 24px;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      transform: scale(1);
+    }
+
+    &:hover &--lyfe,
+    &:focus &--lyfe {
+      color: $secondColor;
+      transform: scale(1);
+    }
+  }
+
+  &__logo--lyfe {
+    color: $accentColor;
+  }
+
+  //   Text
+
+  &__text {
+    margin-bottom: 24px;
+
+    font-family: $secondFont;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    color: $footerTextColor;
+  }
+
+  //   Social links
+
+  &__social-list {
+    margin-bottom: 43px;
+
+    display: flex;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    background-color: rgba($color: $secondColor, $alpha: 0.1);
+    @include my-transition(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: $secondColor;
+    }
+  }
+
+  &__social-icon {
+    fill: $secondColor;
+    @include my-transition(fill);
+  }
+
+  &__social-link:hover &__social-icon,
+  &__social-link:focus &__social-icon {
+    fill: $hoverColor;
+  }
+
+  //   Links
+
+  &__block-title {
+    margin-bottom: 24px;
+
+    font-family: $secondFont;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+
+    color: $secondColor;
+  }
+
+  &__nav,
+  &__guide-list {
+    margin-bottom: 43px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__guide-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__nav-link,
+  &__guide-link,
+  &__address-link,
+  &__terms-link {
+    font-family: $secondFont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    color: $footerTextColor;
+    @include my-transition(color);
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+  }
+
+  //   Address links
+
+  &__address-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__address-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__address-icon {
+    margin-right: 8px;
+
+    fill: $accentColor;
+    @include my-transition(fill);
+  }
+
+  &__address-link:hover &__address-icon {
+    fill: $secondColor;
+  }
+
+  //   Terms of use
+
+  &__terms-list {
+    margin-bottom: 16px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__terms-item:nth-child(2n + 1) {
+    margin-right: 20px;
+  }
+
+  &__terms-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__terms-item:nth-child(2n + 1) &__terms-link::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+
+    content: 'l';
+    color: $secondColor;
+  }
+
+  //   Rights
+
+  &__rights {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    color: $footerTextColor;
+  }
+}

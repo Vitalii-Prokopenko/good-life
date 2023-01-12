@@ -1384,4 +1384,159 @@ body {
   fill: #BE285E;
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #0B0D17;
+}
+.footer__container {
+  padding: 40px 32px 25px;
+}
+.footer__upper {
+  margin-bottom: 35px;
+}
+.footer__logo {
+  margin-bottom: 24px;
+}
+.footer__logo:hover, .footer__logo:focus {
+  color: #E43071;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.footer__logo:hover .footer__logo--lyfe, .footer__logo:focus .footer__logo--lyfe {
+  color: #FFFFFF;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.footer__logo--lyfe {
+  color: #E43071;
+}
+.footer__text {
+  margin-bottom: 24px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #D9DBE1;
+}
+.footer__social-list {
+  margin-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__social-item:not(:last-child) {
+  margin-right: 16px;
+}
+.footer__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: #FFFFFF;
+}
+.footer__social-icon {
+  fill: #FFFFFF;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover .footer__social-icon, .footer__social-link:focus .footer__social-icon {
+  fill: #BE285E;
+}
+.footer__block-title {
+  margin-bottom: 24px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.footer__nav, .footer__guide-list {
+  margin-bottom: 43px;
+}
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__guide-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__nav-link, .footer__guide-link, .footer__address-link, .footer__terms-link {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #D9DBE1;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__nav-link:hover, .footer__nav-link:focus, .footer__guide-link:hover, .footer__guide-link:focus, .footer__address-link:hover, .footer__address-link:focus, .footer__terms-link:hover, .footer__terms-link:focus {
+  color: #BE285E;
+}
+.footer__address-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer__address-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__address-icon {
+  margin-right: 8px;
+  fill: #E43071;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address-link:hover .footer__address-icon {
+  fill: #FFFFFF;
+}
+.footer__terms-list {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__terms-item:nth-child(2n+1) {
+  margin-right: 20px;
+}
+.footer__terms-link {
+  position: relative;
+  display: inline-block;
+}
+.footer__terms-item:nth-child(2n+1) .footer__terms-link::after {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  content: "l";
+  color: #FFFFFF;
+}
+.footer__rights {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #D9DBE1;
+}
+
+/* === ADDRESS LINKS === *//*# sourceMappingURL=main.css.map */
