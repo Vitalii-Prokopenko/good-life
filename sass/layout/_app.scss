@@ -141,7 +141,8 @@
       width: 166.5px; 
       // 83.25
       height: 100%;
-      overflow-x: hidden;
+      // overflow-x: hidden;
+      z-index: 999;
     }
 
     @include desktop {

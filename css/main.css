@@ -1271,7 +1271,7 @@ body {
   .app__img-item:last-child .app__wrap {
     width: 166.5px;
     height: 100%;
-    overflow-x: hidden;
+    z-index: 999;
   }
 }
 @media screen and (min-width: 768px) {
