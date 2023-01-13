@@ -23,35 +23,7 @@
     }
   }
 
-  //   logo in footer
-
-  &__logo {
-    margin-bottom: 24px;
-
-    @include desktop {
-      font-weight: 800;
-      font-size: 25.6684px;
-      line-height: calc(28 / 25.684);
-    }
-
-    &:hover,
-    &:focus {
-      color: $accentColor;
-      transform: scale(1);
-    }
-
-    &:hover &--lyfe,
-    &:focus &--lyfe {
-      color: $secondColor;
-      transform: scale(1);
-    }
-  }
-
-  &__logo--lyfe {
-    color: $accentColor;
-  }
-
-  //   Text
+    //   Text
 
   &__text {
     margin-bottom: 24px;

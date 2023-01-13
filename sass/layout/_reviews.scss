@@ -97,6 +97,7 @@
 
     background-color: $secondColor;
     box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
+    @include my-transition(box-shadow);
 
     &:hover,
     &:focus {
