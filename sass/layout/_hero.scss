@@ -17,6 +17,31 @@
     height: 100%;
   }
 
+  //   Wave over slider
+
+  &__swiper-wave-wrap::after {
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    z-index: 999;
+    content: '';
+
+    @include less-then-tablet {
+      width: 340px;
+      height: 25px;
+      background-image: url(../images/wave/wave-mobile-320.png);
+    }
+
+    @include desktop {
+      width: 1460px;
+      height: 35px;
+      background-image: url(../images/wave/wave-desktop-1440.png);
+    }
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   // Slider
 
   &__swiper-pagination {
@@ -88,19 +113,6 @@
     @include desktop {
       top: 421px;
       left: 720px;
-    }
-  }
-
-  //   Wave over slider
-
-  &__wave {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    z-index: 999;
-
-    @include desktop {
-      bottom: -2px;
     }
   }
 }

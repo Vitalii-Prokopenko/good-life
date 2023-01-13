@@ -97,7 +97,7 @@
 
   &-text {
     color: inherit;
-    @include my-transition(color);
+    @include my-transition(transform);
   }
 
   &:hover {

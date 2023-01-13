@@ -206,8 +206,10 @@ body {
 }
 .btn-transparent-text {
   color: inherit;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-transparent:hover {
   color: #BE285E;
@@ -453,6 +455,29 @@ body {
   position: relative;
   height: 100%;
 }
+.hero__swiper-wave-wrap::after {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  z-index: 999;
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .hero__swiper-wave-wrap::after {
+    width: 340px;
+    height: 25px;
+    background-image: url(../images/wave/wave-mobile-320.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__swiper-wave-wrap::after {
+    width: 1460px;
+    height: 35px;
+    background-image: url(../images/wave/wave-desktop-1440.png);
+  }
+}
 .hero__swiper-pagination {
   margin-bottom: 28px;
   display: -webkit-box;
@@ -522,17 +547,6 @@ body {
     left: 720px;
   }
 }
-.hero__wave {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  z-index: 999;
-}
-@media screen and (min-width: 768px) {
-  .hero__wave {
-    bottom: -2px;
-  }
-}
 
 /* === FAQ === */
 .faq {
@@ -578,8 +592,10 @@ body {
     height: 503px;
   }
 }
-.faq__img:nth-child(1) {
+.faq__img {
   position: absolute;
+}
+.faq__img:nth-child(1) {
   top: 0;
   left: 0;
 }
@@ -590,7 +606,6 @@ body {
   }
 }
 .faq__img:nth-child(2) {
-  position: absolute;
   bottom: 0px;
   right: 0px;
 }
@@ -1303,6 +1318,12 @@ body {
 /* === SOCIAL === */
 .social {
   background-color: #EDEDED;
+}
+@media screen and (min-width: 768px) {
+  .social {
+    position: relative;
+    z-index: 999;
+  }
 }
 .social__container {
   padding-top: 44px;

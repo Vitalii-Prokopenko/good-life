@@ -3,6 +3,11 @@
 .social {
   background-color: $socialBgColor;
 
+  @include desktop {
+    position: relative;
+    z-index: 999;
+  }
+
   &__container {
     padding-top: 44px;
     padding-bottom: 66px;
