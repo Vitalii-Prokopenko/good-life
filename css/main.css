@@ -126,14 +126,14 @@ body {
   border: none;
   color: #FFFFFF;
   background-color: #E43071;
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn-colored--benefits {
@@ -149,10 +149,10 @@ body {
 }
 .btn-colored-text {
   color: inherit;
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-colored:hover {
   background-color: #BE285E;
@@ -171,14 +171,14 @@ body {
   border: 2px solid #E43071;
   color: #E43071;
   background-color: transparent;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-transparent:before {
   content: "";
@@ -190,8 +190,8 @@ body {
   bottom: -8px;
   border: 10px solid transparent;
   border-radius: 38.5px;
-  -webkit-transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn-transparent--faq {
@@ -207,10 +207,10 @@ body {
 }
 .btn-transparent-text {
   color: inherit;
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-transparent:hover {
   color: #BE285E;
@@ -232,8 +232,8 @@ body {
 .logo {
   font-weight: 800;
   color: #FFFFFF;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* == Logo in header ==  */
@@ -253,8 +253,8 @@ body {
 }
 .header__logo--lyfe {
   color: #FFC1D8;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__logo:hover .header__logo--lyfe, .header__logo:focus .header__logo--lyfe {
   color: #FFFFFF;
@@ -272,8 +272,8 @@ body {
 }
 .footer__logo--lyfe {
   color: #E43071;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__logo:hover .footer__logo--lyfe, .footer__logo:focus .footer__logo--lyfe {
   color: #FFFFFF;
@@ -348,12 +348,12 @@ body {
     line-height: 1.125;
     text-transform: capitalize;
     color: #FFFFFF;
-    -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__nav-link:hover, .header__nav-link:focus {
     color: #FFC1D8;
@@ -394,8 +394,8 @@ body {
 }
 .header__search-icon {
   fill: #FFFFFF;
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__search-button:hover .header__search-icon {
   fill: #FFC1D8;
@@ -407,10 +407,10 @@ body {
   font-size: 16px;
   line-height: 1.125;
   background-color: #FFFFFF;
-  -webkit-transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .header__btn-login {
@@ -429,8 +429,8 @@ body {
 
 .menu-toggle {
   fill: #FFFFFF;
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -980,10 +980,10 @@ body {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
           box-shadow: 0.696629px 2.78652px 5.57303px rgba(0, 0, 0, 0.18);
-  -webkit-transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviews__card:hover, .reviews__card:focus {
   -webkit-box-shadow: 3.45px 13.9px 27.85px rgba(0, 0, 0, 0.6);
@@ -1380,10 +1380,10 @@ body {
   border-radius: 50%;
   background-color: #FFFFFF;
   border: 1px solid transparent;
-  -webkit-transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .social__link {
@@ -1396,12 +1396,12 @@ body {
   border: 1px solid #BE285E;
 }
 .social__icon {
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__item:nth-child(1) .social__icon {
   width: 14.96px;
@@ -1479,16 +1479,16 @@ body {
   height: 24px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__social-link:hover, .footer__social-link:focus {
   background-color: #FFFFFF;
 }
 .footer__social-icon {
   fill: #FFFFFF;
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__social-link:hover .footer__social-icon, .footer__social-link:focus .footer__social-icon {
   fill: #BE285E;
@@ -1515,8 +1515,8 @@ body {
   font-size: 14px;
   line-height: 1.7142857143;
   color: #D9DBE1;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__nav-link:hover, .footer__nav-link:focus, .footer__guide-link:hover, .footer__guide-link:focus, .footer__address-link:hover, .footer__address-link:focus, .footer__terms-link:hover, .footer__terms-link:focus {
   color: #BE285E;
@@ -1540,8 +1540,8 @@ body {
 .footer__address-icon {
   margin-right: 8px;
   fill: #E43071;
-  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__address-link:hover .footer__address-icon {
   fill: #FFFFFF;
