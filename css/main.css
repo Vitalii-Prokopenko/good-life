@@ -100,6 +100,7 @@ address {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /* === CONTAINER === */
@@ -1268,8 +1269,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .app__img-item:last-child .app__wrap {
-    width: 83.25px;
-    height: 333px;
+    width: 166.5px;
+    height: 100%;
     overflow-x: hidden;
   }
 }

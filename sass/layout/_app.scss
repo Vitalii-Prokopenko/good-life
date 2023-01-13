@@ -138,8 +138,9 @@
     position: relative;
 
     @include less-then-tablet {
-      width: 83.25px;
-      height: 333px;
+      width: 166.5px; 
+      // 83.25
+      height: 100%;
       overflow-x: hidden;
     }
 
