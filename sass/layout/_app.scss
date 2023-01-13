@@ -8,8 +8,6 @@
     height: 950px;
     overflow-y: visible;
 
-    outline: 1px solid yellow;
-
     @include desktop {
       padding: 112px 147px 0 238px;
       height: 491px;
@@ -101,7 +99,6 @@
   }
 
   &__img-item {
-    // position: absolute;
     width: 167px;
     height: 333px;
 
@@ -111,8 +108,6 @@
     }
 
     &:first-child {
-      
-
       @include desktop {
         position: absolute;
         top: -134px;
@@ -126,12 +121,6 @@
         top: 122px;
         left: 210px;
         overflow-y: visible;
-        
-      }
-
-      @include desktop {
-        
-        
       }
     }
   }
@@ -142,13 +131,11 @@
     @include desktop {
       width: 100%;
       height: 100%;
-      
     }
   }
 
   &__img-item:last-child &__wrap {
     position: relative;
-    
 
     @include less-then-tablet {
       width: 83.25px;

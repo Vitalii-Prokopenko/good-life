@@ -5,9 +5,7 @@
 
   @include desktop {
     margin-bottom: 108px;
-  }
-
-  outline: 1px solid maroon;
+  }  
 
   &__container {
     padding-left: 16px;
@@ -21,9 +19,7 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
-    }
-
-    outline: 1px solid magenta;
+    }    
   }
 
   &__img-wrap {

@@ -28,20 +28,15 @@
 
   // Page navigation
 
-  &__nav {    
+  &__nav {
     @include less-then-tablet {
-      margin-right: auto;   
+      margin-right: auto;
     }
-      
-    @include desktop {      
+
+    @include desktop {
       display: flex;
       align-items: center;
     }
-
-    // @include resp-desktop {
-    //   flex-basis: 72%;
-    //   justify-content: space-between;
-    // }
   }
 
   // Page menu
@@ -52,21 +47,12 @@
     @include desktop {
       display: flex;
     }
-
-    // @include resp-desktop {
-    //   justify-content: space-between;
-    //   flex-basis: 67%;
-    // }
   }
 
   &__nav-item:not(:last-child) {
     @include desktop {
       margin-right: 76px;
     }
-
-    // @include resp-desktop {
-    //   margin-right: auto;
-    // }
   }
 
   &__nav-link {
@@ -97,10 +83,6 @@
   &__buttons-wrap {
     display: flex;
     align-items: center;
-
-    // @include resp-desktop {
-    //   flex-basis: 19.4%;
-    // }
   }
 
   // Search form
@@ -111,10 +93,6 @@
     @include desktop {
       margin-right: 37px;
     }
-
-    // @include resp-desktop {
-    //   margin-right: auto;
-    // }
   }
 
   &__search-input {
@@ -173,9 +151,9 @@
       width: 100px;
     }
 
-&:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
   }
 }
 

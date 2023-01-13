@@ -747,7 +747,6 @@ body {
 /* === FACILITIES === */
 .facilities {
   margin-bottom: 28px;
-  outline: 1px solid maroon;
 }
 @media screen and (min-width: 768px) {
   .facilities {
@@ -757,7 +756,6 @@ body {
 .facilities__container {
   padding-left: 16px;
   padding-right: 16px;
-  outline: 1px solid magenta;
 }
 @media screen and (min-width: 768px) {
   .facilities__container {
@@ -870,7 +868,6 @@ body {
   padding-left: 28px;
   padding-bottom: 37px;
   height: 100%;
-  outline: 1px solid crimson;
 }
 @media screen and (min-width: 768px) {
   .reviews__container {
@@ -1102,7 +1099,6 @@ body {
   padding: 56px 15px 0;
   height: 950px;
   overflow-y: visible;
-  outline: 1px solid yellow;
 }
 @media screen and (min-width: 768px) {
   .app__container {
@@ -1393,11 +1389,31 @@ body {
 .footer__container {
   padding: 40px 32px 25px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding: 96px 165px 24px;
+  }
+}
 .footer__upper {
   margin-bottom: 35px;
 }
+@media screen and (min-width: 768px) {
+  .footer__upper {
+    margin-bottom: 105px;
+    display: grid;
+    grid-template-columns: 255px repeat(3, 1fr);
+    gap: 40px;
+  }
+}
 .footer__logo {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    font-weight: 800;
+    font-size: 25.6684px;
+    line-height: 1.0901728703;
+  }
 }
 .footer__logo:hover, .footer__logo:focus {
   color: #E43071;
@@ -1421,10 +1437,14 @@ body {
   color: #D9DBE1;
 }
 .footer__social-list {
-  margin-bottom: 43px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .footer__social-list {
+    margin-bottom: 43px;
+  }
 }
 .footer__social-item:not(:last-child) {
   margin-right: 16px;
@@ -1465,13 +1485,12 @@ body {
   line-height: 1.5;
   color: #FFFFFF;
 }
-.footer__nav, .footer__guide-list {
-  margin-bottom: 43px;
+@media screen and (max-width: 767px) {
+  .footer__nav, .footer__guide-list {
+    margin-bottom: 43px;
+  }
 }
-.footer__nav-item:not(:last-child) {
-  margin-bottom: 12px;
-}
-.footer__guide-item:not(:last-child) {
+.footer__nav-item:not(:last-child), .footer__guide-item:not(:last-child) {
   margin-bottom: 12px;
 }
 .footer__nav-link, .footer__guide-link, .footer__address-link, .footer__terms-link {
@@ -1486,13 +1505,18 @@ body {
 .footer__nav-link:hover, .footer__nav-link:focus, .footer__guide-link:hover, .footer__guide-link:focus, .footer__address-link:hover, .footer__address-link:focus, .footer__terms-link:hover, .footer__terms-link:focus {
   color: #BE285E;
 }
+@media screen and (min-width: 768px) {
+  .footer__nav-link, .footer__guide-link, .footer__address-link, .footer__terms-link {
+    display: inline-block;
+  }
+}
 .footer__address-item:not(:last-child) {
   margin-bottom: 24px;
 }
 .footer__address-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1505,6 +1529,20 @@ body {
 }
 .footer__address-link:hover .footer__address-icon {
   fill: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .footer__lower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 .footer__terms-list {
   margin-bottom: 16px;
@@ -1520,6 +1558,11 @@ body {
 .footer__terms-item:nth-child(2n+1) {
   margin-right: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__terms-item:nth-child(2) {
+    margin-right: 20px;
+  }
+}
 .footer__terms-link {
   position: relative;
   display: inline-block;
@@ -1531,12 +1574,19 @@ body {
   content: "l";
   color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .footer__terms-item:nth-child(2) .footer__terms-link::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    content: "l";
+    color: #FFFFFF;
+  }
+}
 .footer__rights {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   color: #D9DBE1;
-}
-
-/* === ADDRESS LINKS === *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
