@@ -9,6 +9,7 @@ Used technologies:
 5. Swiper slider https://swiperjs.com/
 
 **Lighthouse results**:
+
 **_Desktop_**:
 1. Performance - 80-94%
 2. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
