@@ -71,6 +71,15 @@
     background-color: $accentColor;
   }
 
+  // Image
+
+  &__img {
+    @include desktop {
+      width: 1440px;
+      height: 697px;
+    }
+  }
+
   // Title
 
   &__title {

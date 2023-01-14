@@ -74,6 +74,15 @@
     }
   }
 
+  // Image
+
+  &__img {
+    @include desktop {
+      width: 1440px;
+      height: 700px;
+    }
+  }
+
   // Title
 
   &__title {
