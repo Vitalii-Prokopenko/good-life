@@ -1,5 +1,5 @@
 # good-lyfe
-landing page for gym with mobile version
+Landing page for gym with mobile version
 
 Used technologies:
 1. HTML 5.0
