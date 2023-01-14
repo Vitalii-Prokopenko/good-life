@@ -28,7 +28,7 @@
     width: 275px;
     height: 198px;
 
-    @include less-then-tablet {
+    @include less-then-desktop {
       margin-bottom: 16px;
     }
 

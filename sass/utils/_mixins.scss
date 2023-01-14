@@ -1,15 +1,15 @@
 // Mobile screen
 
 @mixin mobile {
-  @media screen and (min-width: $minMobile) and (max-width: calc($minTablet - 1px)) {
+  @media screen and (min-width: $minMobile) and (max-width: calc($minDesktop - 1px)) {
     @content;
   }
 }
 
-// Screens less then tablet
+// Screens less then desktop
 
-@mixin less-then-tablet {
-  @media screen and (max-width: calc($minTablet - 1px)) {
+@mixin less-then-desktop {
+  @media screen and (max-width: calc($minDesktop - 1px)) {
     @content;
   }
 }
@@ -17,23 +17,7 @@
 // Desktop screen
 
 @mixin desktop {
-  @media screen and (min-width: $minTablet) {
-    @content;
-  }
-}
-
-// Desktop screen (adaptive)
-
-@mixin adapt-desktop {
   @media screen and (min-width: $minDesktop) {
-    @content;
-  }
-}
-
-// Desktop screen (responsive)
-
-@mixin resp-desktop {
-  @media screen and (min-width: $minTablet) and (max-width: calc($minDesktop - 1px)) {
     @content;
   }
 }

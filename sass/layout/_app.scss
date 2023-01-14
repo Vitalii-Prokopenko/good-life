@@ -67,7 +67,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include less-then-tablet {
+    @include less-then-desktop {
       margin-bottom: 39px;
     }
 
@@ -116,7 +116,7 @@
     }
 
     &:last-child {
-      @include less-then-tablet {
+      @include less-then-desktop {
         position: absolute;
         top: 122px;
         left: 210px;
@@ -137,7 +137,7 @@
   &__img-item:last-child &__wrap {
     position: relative;
 
-    @include less-then-tablet {
+    @include less-then-desktop {
       width: 166.5px; 
       // 83.25
       height: 100%;
@@ -159,7 +159,7 @@
     left: 83.5px;
     transform: translate(-50%, -50%);
 
-    @include less-then-tablet {
+    @include less-then-desktop {
       max-width: 167px;
     }
 

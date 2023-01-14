@@ -8,11 +8,7 @@
     width: $minMobile;
   }
 
-  // @include resp-desktop {
-  //   width: 100vw;
-  // }
-
-  @include adapt-desktop {
+  @include desktop {
     width: $minDesktop;
   }
 }

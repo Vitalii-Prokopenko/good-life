@@ -29,7 +29,7 @@
   // Page navigation
 
   &__nav {
-    @include less-then-tablet {
+    @include less-then-desktop {
       margin-right: auto;
     }
 
@@ -106,7 +106,7 @@
   }
 
   &__search-text {
-    @include less-then-tablet {
+    @include less-then-desktop {
       display: none;
     }
 
@@ -132,7 +132,7 @@
   // Login button
 
   &__btn-login {
-    @include less-then-tablet {
+    @include less-then-desktop {
       display: none;
     }
 
@@ -147,7 +147,7 @@
 
     @include my-transition(box-shadow);
 
-    @include resp-desktop {
+    @include desktop {
       width: 100px;
     }
 

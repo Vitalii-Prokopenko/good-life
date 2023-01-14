@@ -58,7 +58,7 @@
   }
 
   &__list {
-    @include less-then-tablet {
+    @include less-then-desktop {
       display: flex;
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
@@ -104,7 +104,7 @@
       box-shadow: 3.45px 13.9px 27.85px rgba(0, 0, 0, 0.6);
     }
 
-    @include less-then-tablet {
+    @include less-then-desktop {
       flex: 0 0 83%;
       scroll-snap-align: start;
     }
@@ -154,7 +154,7 @@
     }
 
     &:not(:last-child) {
-      @include less-then-tablet {
+      @include less-then-desktop {
         margin-right: 27px;
       }
     }
