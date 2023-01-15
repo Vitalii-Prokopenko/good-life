@@ -1,12 +1,16 @@
 # good-lyfe
 Landing page for gym with mobile version
 
+#mobile 320px
+#desktop 1440px
+
 Used technologies:
 1. HTML 5.0
 2. CSS 3.0
 3. SASS
 4. BEM
-5. Swiper slider https://swiperjs.com/
+5. Mobile first
+6. Swiper slider https://swiperjs.com/
 
 **Lighthouse results**:
 
