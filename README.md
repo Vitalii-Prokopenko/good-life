@@ -11,13 +11,11 @@ Used technologies:
 **Lighthouse results**:
 
 **_Desktop_**:
-1. Performance - 80-94%
-2. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
-3. Best practices - 100%
-4. SEO - 90% (Links are not crawlable - not specified in template)
+1. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
+2. Best practices - 100%
+3. SEO - 90% (Links are not crawlable - not specified in template)
 
 **_Mobile_**:
-1. Performance - 67-78%
-2. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
-3. Best practices - 100%
-4. SEO - 92% (Links are not crawlable - not specified in template)
+1. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
+2. Best practices - 100%
+3. SEO - 92% (Links are not crawlable - not specified in template)
